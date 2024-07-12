@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+#become makes you sudo
+
+  tasks:
+  - name: install htop
+    package:
+      name: htop
